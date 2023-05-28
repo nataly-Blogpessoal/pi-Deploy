@@ -15,19 +15,19 @@ export class AuthService {
   ) { }
 
   entrar(userLogin: UserLogin): Observable<UserLogin>{
-    return this.http.post<UserLogin>('http://localhost:8080/usuarios/logar', userLogin)
+    return this.http.post<UserLogin>('https://upvzinhozinho-ynmf.onrender.com/usuarios/logar', userLogin)
   }
   cadastrar(user: User):Observable<User>{
-    return this.http.post<User>('http://localhost:8080/usuarios/cadastrar', user)
+    return this.http.post<User>('https://upvzinhozinho-ynmf.onrender.com/usuarios/cadastrar', user)
   }
   atualizar(user:User): Observable<User>{
-    return this.http.put<User>('http://localhost:8080/usuarios/atualizar', user)
+    return this.http.put<User>('https://upvzinhozinho-ynmf.onrender.com/usuarios/atualizar', user)
   }
   getByIdUser(id:number):Observable<User>{
-    return this.http.get<User>(`http://localhost:8080/usuarios/${id}`)
+    return this.http.get<User>(`https://upvzinhozinho-ynmf.onrender.com/usuarios/${id}`)
   }
  findByUsuario(usuario:String): Observable<User>{
-    return this.http.get<User>(`http://localhost:8080/usuarios/esquecisenha/${usuario}`)
+    return this.http.get<User>(`https://upvzinhozinho-ynmf.onrender.com/usuarios/esquecisenha/${usuario}`)
   }
 
   logado(){
