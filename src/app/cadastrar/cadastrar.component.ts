@@ -38,19 +38,6 @@ export class CadastrarComponent implements OnInit {
     if (this.user.senha != this.confirmarSenha) {
       this.alertas.showAlertDanger('As senhas estão diferentes')
     }
-    else if (!this.user.nome) {
-      this.alertas.showAlertDanger('Por favor, preencha o campo Nome');
-
-    else if (!this.user.usuario.includes('@') || !this.user.usuario.includes('.')) {
-      this.alertas.showAlertDanger('O Email deve ter um formato válido')
-    }
-    else if (!this.user.senha) {
-      this.alertas.showAlertDanger('Por favor, preencha o campo Senha');
-    }
-    else if (this.user.senha.length < 8) {
-      this.alertas.showAlertDanger('A senha tem que ter no minimo 8 caracteres')
-    }
-    
 
     else {
       this.authService.cadastrar(this.user).subscribe((resp: User) => {
