@@ -1,0 +1,26 @@
+#ar {
+    border-radius: 20px;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+.title2{
+    font-size: 70px;
+    
+    text-shadow: 2px 2px 2px #000;
+}
+h3{
+    
+    text-shadow: 2px 2px 2px #000; 
+}

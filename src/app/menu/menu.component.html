@@ -1,0 +1,53 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <img class="navbar-brand" src="https://i.imgur.com/X1Wvbro.png" alt="imagem para trocar" width="150px" height="150px"  class="img-fluid rounded circle">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link active fs-16 m-lg-3 fontBold link-menu active" routerLink="/inicio">Inicio</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link fs-16 m-lg-3 active fontBold link-menu" [routerLink]="['/user-edit', id]">Perfil</a>
+        </li>
+        
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link fs-16 m-lg-3 active fontBold  link-menu active" routerLink="/produtos" >Produtos</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link fs-16 m-lg-3 active  fontBold link-menu active" routerLink="/lojas">Lojas</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link fs-16 m-lg-3 active  fontBold  link-menu active" routerLink="/sobre-nos">Sobre nós</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link fs-16 m-lg-3 active fontBold text-dark link-menu active" routerLink="/carrinho">Seu carrinho <i class="bi bi-cart3"></i></a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto d-flex align-items-end">
+        <li class="nav-item m-lg-4">
+          <a (click)='sair()' class="m-0 text-dark fs-16 fontBold  link-menu">Sair <i class="fa fa-sign-out" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+        
+      
+    </div>
+  </div>
+</nav>
+<hr class="m-1">
+
+
+
+
+
+
+
+
+
+
+
+
+
